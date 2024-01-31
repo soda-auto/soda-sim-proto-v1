@@ -1,15 +1,13 @@
-# SodaSimProto
+# soda-sim-proto-v1
 
-The SodaSimProto includes the generic messages serialization / deserialization for the SodaSim (mostly for sensors).
-This repository is used as a submodule for SodaSim and can also be compiled as a separate static library via cmake.
+The soda-sim-proto-v1 includes implementation of the generic snesors messages for the SodaSim.
 
 ## Sensors message serialization / deserialization 
-* _Camera.hpp_ - generic cameras message (sends via ZMQ)
-* _Lidar.hpp_ - generic LiDAR message (sends via UDP)
-* _Radar.hpp_ - generic radar message (sends via UDP)
-* _Ultrasonic.hpp_ - generic ultrasonic message (sends via UDP)
-* _OXTS.hpp_ - GNSS/IMU message (sends via UDP). This is original NCOM protocol from [OXTS](https://support.oxts.com/hc/en-us/articles/115002163985-Decoding-OxTS-navigation-outputs)
-* _VehicleState.hpp_ - generic vehicle state message (sends via UDP)
+* _camera.hpp_ - generic cameras message (sends via ZMQ)
+* _lidar.hpp_ - generic LiDAR message (sends via UDP)
+* _radar.hpp_ - generic radar message (sends via UDP)
+* _ultrasonic.hpp_ - generic ultrasonic message (sends via UDP)
+* _vehicleState.hpp_ - generic vehicle state message (sends via UDP)
 
 ## Usage example (for Lidar.hpp, Radar.hpp, Ultrasonic.hpp)
 
